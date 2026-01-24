@@ -1,0 +1,24 @@
+---
+date: {{date}}
+day: {{date:dddd}}
+week: {{date:ww}}
+---
+# {{date:YYYY-MM-DD}}
+
+## Priorities
+- [ ]
+- [ ]
+- [ ]
+
+## Log
+*
+
+## Notes
+
+
+## Related Projects
+-
+
+---
+
+**Energy:** ⚡⚡⚡⚡⚡ | **Focus:** 🎯🎯🎯🎯🎯

@@ -8,21 +8,21 @@ filters:
         - file.inFolder("99_系统/模板")
 formulas:
   display_title: file.asLink(if(title != "", title, file.basename.replace("_", " ")))
-  priority_label: if(priority == "P0", "🔥 Critical", if(priority == "P1", "⚡ High", if(priority == "P2", "📌 Medium", if(priority == "P3", "📋 Low", "💭 Someday"))))
+  priority_label: if(priority == "P0", "🔥 紧急", if(priority == "P1", "⚡ 高", if(priority == "P2", "📌 中", if(priority == "P3", "📋 低", "💭 以后"))))
 properties:
   formula.display_title:
-    displayName: Title
+    displayName: 标题
   formula.priority_label:
-    displayName: Priority
+    displayName: 优先级
   status:
-    displayName: Status
+    displayName: 状态
   area:
-    displayName: Area
+    displayName: 领域
   topic:
-    displayName: Topic
+    displayName: 主题
 views:
   - type: table
-    name: ⏸️ On Hold
+    name: ⏸️ 搁置
     filters:
       and:
         - type == "project"
@@ -33,7 +33,7 @@ views:
       - due
       - area
   - type: table
-    name: ✅ Completed Projects
+    name: ✅ 已完成项目
     filters:
       and:
         - type == "project"
@@ -42,7 +42,7 @@ views:
       - formula.display_title
       - area
   - type: table
-    name: ✅ Processed Inbox
+    name: ✅ 已处理收件箱
     filters:
       and:
         - type == "inbox"

@@ -16,6 +16,9 @@ week: {{date:ww}}
 ## Notes
 
 
+## AI Digest
+
+
 ## Related Projects
 -
 

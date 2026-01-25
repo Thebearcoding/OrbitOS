@@ -2,33 +2,33 @@ filters:
   and:
     - file.ext == "md"
     - or:
-        - file.inFolder("30_Research")
-        - file.inFolder("40_Wiki")
+        - file.inFolder("30_研究")
+        - file.inFolder("40_知识库")
 formulas:
   display_title: file.asLink(file.basename.replace("_", " ").replace("-", " "))
   category: file.folder.split("/").reverse()[0]
   area_name: file.path.split("/")[1]
-  source_type: if(file.inFolder("40_Wiki"), "Wiki", "Area")
+  source_type: if(file.inFolder("40_知识库"), "知识库", "研究")
   tag_list: if(tags != "", tags.join(", "), "")
 properties:
   formula.display_title:
-    displayName: Title
+    displayName: 标题
   formula.category:
-    displayName: Category
+    displayName: 分类
   formula.area_name:
-    displayName: Area
+    displayName: 领域
   formula.source_type:
-    displayName: Type
+    displayName: 类型
   formula.tag_list:
-    displayName: Tags
+    displayName: 标签
   created:
-    displayName: Created
+    displayName: 创建时间
 views:
   - type: table
-    name: 📚 Wiki (Concepts)
+    name: 📚 知识库
     filters:
       and:
-        - file.inFolder("40_Wiki")
+        - file.inFolder("40_知识库")
     groupBy:
       property: formula.area_name
       direction: ASC
@@ -47,10 +47,10 @@ views:
       formula.category: 150
       formula.tag_list: 200
   - type: table
-    name: 📖 Research (Reference)
+    name: 📖 研究
     filters:
       and:
-        - file.inFolder("30_Research")
+        - file.inFolder("30_研究")
     groupBy:
       property: formula.area_name
       direction: ASC
@@ -67,7 +67,7 @@ views:
       formula.category: 150
       formula.tag_list: 200
   - type: table
-    name: 🔍 All Knowledge
+    name: 🔍 全部知识
     filters:
       and:
         - formula.tag_list.contains("mcp")

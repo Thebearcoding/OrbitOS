@@ -43,48 +43,48 @@ Follow these steps:
 2. Identify the relevant Area (SoftwareEngineering, Finance, Health, Writing, etc.)
 3. Create the plan file at 90_计划/Plan_YYYY-MM-DD_Kickoff_<ProjectName>.md using this format:
 
-# Kickoff Plan: [Project Name]
+# 启动计划: [项目名称]
 
-## Source
-- Inbox file: [path to inbox file if applicable, or "inline input"]
+## 来源
+- 收件箱文件: [收件箱文件路径（如适用），或"内联输入"]
 
-## Objective
-[One sentence summary of the project goal]
+## 目标
+[一句话总结项目目标]
 
-## Project Structure
-- Area: [Relevant area from 30_研究]
-- Type: [project]
-- Estimated scope: [small: single file | medium: folder with few files | large: folder with many files]
+## 项目结构
+- 领域: [来自 30_研究 的相关领域]
+- 类型: [project]
+- 预估规模: [小型: 单文件 | 中型: 少量文件的文件夹 | 大型: 多文件的文件夹]
 
-## Proposed Action Items
-[ ] Define success criteria
-[ ] Break down into phases/milestones
-[ ] Identify dependencies or blockers
-[ ] Set up project folder structure
+## 建议行动项
+[ ] 定义成功标准
+[ ] 分解为阶段/里程碑
+[ ] 识别依赖项或阻碍因素
+[ ] 设置项目文件夹结构
 
-## Draft Project Outline
-### Context
-[What problem this solves, why it matters]
+## 项目大纲草案
+### 背景
+[这解决什么问题，为什么重要]
 
-### Actions (Phases)
-- Phase 1: [Description]
-- Phase 2: [Description]
+### 行动（阶段）
+- 阶段1: [描述]
+- 阶段2: [描述]
 
-### Success Metrics
-- [ ] Metric 1
-- [ ] Metric 2
+### 成功指标
+- [ ] 指标1
+- [ ] 指标2
 
-## Clarification Questions (Optional)
-*If you have answers, fill them in below. If left blank, I will proceed with standard assumptions.*
+## 澄清问题（可选）
+*如果你有答案，请在下方填写。如果留空，我将按标准假设继续。*
 
-**Q:** What's the timeline/deadline for this project?
-**A:**
+**问:** 这个项目的时间线/截止日期是什么？
+**答:**
 
-**Q:** What's the priority level? (P0=critical, P1=high, P2=medium, P3=low, P4=someday)
-**A:**
+**问:** 优先级是多少？（P0=紧急, P1=高, P2=中, P3=低, P4=以后）
+**答:**
 
-**Q:** Any specific constraints or requirements?
-**A:**
+**问:** 有任何特定的约束或要求吗？
+**答:**
 
 4. Return the path to the created plan file.
 "

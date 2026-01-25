@@ -31,7 +31,13 @@ Help the user start their day by reviewing yesterday's progress, creating today'
    - List files in `00_收件箱/` with `status: pending`
    - Count items waiting to be processed
 
-5. **Analyze & Prioritize**
+5. **Fetch AI Content** (run in parallel)
+   - Run `/ai-newsletters` workflow to get today's AI newsletter digest
+   - Run `/ai-products` workflow to get today's AI product launches
+   - Both skills will return condensed summaries for /start-my-day context
+   - Store top 5 content opportunities and top 5 product launches
+
+6. **Analyze & Prioritize**
    - Identify time-sensitive items (deadlines, events)
    - Find projects not touched in 3+ days (stale)
    - Determine logical next steps for each active project
@@ -59,6 +65,11 @@ Use the AskUserQuestion tool to gather:
    - **待办事项**: Carryover incomplete tasks from yesterday, then user's focus, then project next actions
    - **日志**: Leave empty for user
    - **备注**: Add recommendations (time-sensitive items, stale projects, inbox count)
+   - **AI 摘要**: Add summary section with top content from newsletters and product launches
+     - Include top 3-5 content opportunities from AI newsletters
+     - Include top 3-5 product launch opportunities
+     - Each item MUST include a markdown link to the original source: `[Title](url)`
+     - Add clear links to full digests in respective folders: `[[50_资源/Newsletters/YYYY-MM-DD-Digest]]` and `[[50_资源/产品发布/YYYY-MM-DD-Digest]]`
    - **相关项目**: List active projects with current status
 
 ## Step 4: Process New Ideas (from Q2)
@@ -98,6 +109,22 @@ Output a concise summary in Chinese:
 - [[Idea2]]
 
 **收件箱:** [N] 条待处理
+
+---
+
+**AI 摘要:**
+
+*内容机会:*
+- [标题](原文链接) - [角度]
+- [标题](原文链接) - [角度]
+- [标题](原文链接) - [角度]
+→ 完整摘要: [[50_资源/Newsletters/YYYY-MM-DD-Digest|今日Newsletter摘要]]
+
+*产品发布:*
+- [产品](原文链接) - [角度] - [指标]
+- [产品](原文链接) - [角度] - [指标]
+- [产品](原文链接) - [角度] - [指标]
+→ 完整摘要: [[50_资源/产品发布/YYYY-MM-DD-Digest|今日产品发布摘要]]
 
 ---
 

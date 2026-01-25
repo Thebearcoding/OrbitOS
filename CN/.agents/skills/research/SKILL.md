@@ -44,45 +44,45 @@ Follow these steps:
 2. Identify Persona: Scan 99_系统/提示词/ for the most relevant expertise
 3. Create the plan file at 90_计划/Plan_YYYY-MM-DD_Research_<Topic>.md using this format:
 
-# Research Plan: [Topic]
+# 研究计划: [主题]
 
-## Research Objective
-[What the user will understand after completing this research]
+## 研究目标
+[完成此研究后用户将理解什么]
 
-## Context Found
-- Related Area: [Area name]
-- Existing notes: [List any existing relevant notes, or 'None found']
-- Related project: [Project name if applicable, or 'N/A']
+## 发现的上下文
+- 相关领域: [领域名称]
+- 现有笔记: [列出相关的现有笔记，或"未找到"]
+- 相关项目: [项目名称（如适用），或"无"]
 
-## Research Strategy
-[ ] Search for official documentation
-[ ] Find practical examples and use cases
-[ ] Identify key concepts for Wiki extraction
-[ ] Create hands-on examples (if applicable)
-[ ] Find common pitfalls and best practices
+## 研究策略
+[ ] 搜索官方文档
+[ ] 查找实际示例和用例
+[ ] 识别用于知识库提取的关键概念
+[ ] 创建实践示例（如适用）
+[ ] 查找常见陷阱和最佳实践
 
-## Output Structure
-- Main note: 30_研究/<Area>/<Topic>/<Topic>.md
-- Atomic concepts: 40_知识库/<Category>/<ConceptName>.md
-- Examples/assets: 30_研究/<Area>/<Topic>/examples/ (if needed)
+## 输出结构
+- 主笔记: 30_研究/<领域>/<主题>/<主题>.md
+- 原子概念: 40_知识库/<分类>/<概念名称>.md
+- 示例/资源: 30_研究/<领域>/<主题>/examples/（如需要）
 
-## Clarification Questions (Optional)
-*If you have answers, fill them in below. If left blank, I will proceed with standard assumptions.*
+## 澄清问题（可选）
+*如果你有答案，请在下方填写。如果留空，我将按标准假设继续。*
 
-**Q:** What's your current knowledge level? (beginner/intermediate/advanced)
-**A:**
+**问:** 你目前的知识水平是什么？（初级/中级/高级）
+**答:**
 
-**Q:** Is this for a specific project or general learning?
-**A:**
+**问:** 这是针对特定项目还是一般学习？
+**答:**
 
-**Q:** Do you prefer theory-first or example-driven approach?
-**A:**
+**问:** 你更喜欢理论优先还是示例驱动的方法？
+**答:**
 
 4. Return the path to the created plan file.
 "
 ```
 
-After the planning agent returns, notify the user in Chinese:
+After the planning agent returns, notify the user:
 "我已在 `[plan file path]` 创建了研究计划。请查看并按需修改，确认后继续执行。"
 
 # Phase 2: Launch Execution Agent (After User Confirmation)

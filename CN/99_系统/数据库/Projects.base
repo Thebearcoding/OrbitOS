@@ -11,26 +11,26 @@ formulas:
   due_relative: if(due != "", date(due).relative(), "")
   is_overdue: if(due != "", date(due) < today() && status != "done" && status != "processed", false)
   urgency_icon: if(formula.is_overdue, "🔴", if(due != "" && date(due) <= today() + "3d", "🟠", if(due != "" && date(due) <= today() + "7d", "🟡", "🟢")))
-  priority_label: if(priority == "P0", "🔥 Critical", if(priority == "P1", "⚡ High", if(priority == "P2", "📌 Medium", if(priority == "P3", "📋 Low", "💭 Someday"))))
+  priority_label: if(priority == "P0", "🔥 紧急", if(priority == "P1", "⚡ 高", if(priority == "P2", "📌 中", if(priority == "P3", "📋 低", "💭 以后"))))
   area_display: area.replace("[[", "").replace("]]", "")
 properties:
   formula.urgency_icon:
-    displayName: Urgency
+    displayName: 紧急程度
   formula.display_title:
-    displayName: Title
+    displayName: 标题
   formula.priority_label:
-    displayName: Priority
+    displayName: 优先级
   formula.due_relative:
-    displayName: Due
+    displayName: 截止日期
   status:
-    displayName: Status
+    displayName: 状态
   formula.area_display:
-    displayName: Area
+    displayName: 领域
   topic:
-    displayName: Topic
+    displayName: 主题
 views:
   - type: table
-    name: 📁 Projects
+    name: 📁 项目
     filters:
       and:
         - type == "project"
@@ -55,7 +55,7 @@ views:
       formula.priority_label: 91
       formula.due_relative: 90
   - type: table
-    name: 📥 Inbox
+    name: 📥 收件箱
     filters:
       and:
         - type == "inbox"

@@ -11,7 +11,7 @@ English | [中文](README_CN.md)
 **Option 1: Git Sparse Checkout** (downloads only English version)
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/user/OrbitOS.git my-vault
+git clone --filter=blob:none --sparse https://github.com/MarsWang42/OrbitOS.git my-vault
 cd my-vault
 git sparse-checkout set EN
 mv EN/* EN/.* . 2>/dev/null; rmdir EN
@@ -20,7 +20,7 @@ mv EN/* EN/.* . 2>/dev/null; rmdir EN
 **Option 2: Using degit** (no git history, simpler)
 
 ```bash
-npx degit user/OrbitOS/EN my-vault
+npx degit MarsWang42/OrbitOS/EN my-vault
 ```
 
 ---
@@ -91,7 +91,7 @@ The folder structure provides clear organization while remaining adaptable:
    - **Claude Code** — `npm install -g @anthropic-ai/claude-code` ([Documentation](https://docs.anthropic.com/en/docs/claude-code))
    - **Gemini CLI** — `npm install -g @google/gemini-cli` ([Documentation](https://github.com/google-gemini/gemini-cli))
 3. Open the vault folder in Obsidian and run your AI assistant from the same directory
-4. **Recommended**: Install the [Terminal plugin](https://github.com/polyipseity/obsidian-terminal) to run Claude Code directly within Obsidian
+4. **Recommended**: Install the [Terminal plugin](https://github.com/polyipseity/obsidian-terminal) to run Claude Code directly within Obsidian — this provides a seamless experience without switching between apps
 
 ### Your First Day
 

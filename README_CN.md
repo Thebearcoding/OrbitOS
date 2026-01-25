@@ -11,7 +11,7 @@
 **方式一：Git Sparse Checkout**（仅下载中文版本）
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/user/OrbitOS.git my-vault
+git clone --filter=blob:none --sparse https://github.com/MarsWang42/OrbitOS.git my-vault
 cd my-vault
 git sparse-checkout set CN
 mv CN/* CN/.* . 2>/dev/null; rmdir CN
@@ -20,7 +20,7 @@ mv CN/* CN/.* . 2>/dev/null; rmdir CN
 **方式二：使用 degit**（无 git 历史，更简单）
 
 ```bash
-npx degit user/OrbitOS/CN my-vault
+npx degit MarsWang42/OrbitOS/CN my-vault
 ```
 
 ---
@@ -91,7 +91,7 @@ AI 会在你的工作过程中自动创建这些连接，随时间推移构建�
    - **Claude Code** — `npm install -g @anthropic-ai/claude-code`（[官方文档](https://docs.anthropic.com/en/docs/claude-code)）
    - **Gemini CLI** — `npm install -g @google/gemini-cli`（[官方文档](https://github.com/google-gemini/gemini-cli)）
 3. 在 Obsidian 中打开库文件夹，并在同一目录下运行你的 AI 助手
-4. **推荐**：安装 [Terminal 插件](https://github.com/polyipseity/obsidian-terminal)，可直接在 Obsidian 中运行 Claude Code
+4. **推荐**：安装 [Terminal 插件](https://github.com/polyipseity/obsidian-terminal)，可直接在 Obsidian 中运行 Claude Code，无需在应用之间切换
 
 ### 你的第一天
 

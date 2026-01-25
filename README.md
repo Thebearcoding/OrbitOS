@@ -86,8 +86,12 @@ The folder structure provides clear organization while remaining adaptable:
 
 ### Prerequisites
 
-- [Obsidian](https://obsidian.md/) installed with this vault opened
-- **Claude Code** or **Gemini CLI** configured and running in the vault directory
+1. **Install Obsidian** — [Download](https://obsidian.md/download) (macOS, Windows, Linux)
+2. **Install an AI Assistant** (choose one):
+   - **Claude Code** — `npm install -g @anthropic-ai/claude-code` ([Documentation](https://docs.anthropic.com/en/docs/claude-code))
+   - **Gemini CLI** — `npm install -g @google/gemini-cli` ([Documentation](https://github.com/google-gemini/gemini-cli))
+3. Open the vault folder in Obsidian and run your AI assistant from the same directory
+4. **Recommended**: Install the [Terminal plugin](https://github.com/polyipseity/obsidian-terminal) to run Claude Code directly within Obsidian
 
 ### Your First Day
 

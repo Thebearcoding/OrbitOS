@@ -86,8 +86,12 @@ AI 会在你的工作过程中自动创建这些连接，随时间推移构建�
 
 ### 前提条件
 
-- 已安装 [Obsidian](https://obsidian.md/) 并打开此库 (Vault)
-- 已安装 **Claude Code** 或 **Gemini CLI** 并在库目录下运行
+1. **安装 Obsidian** — [下载地址](https://obsidian.md/download)（支持 macOS、Windows、Linux）
+2. **安装 AI 助手**（任选其一）：
+   - **Claude Code** — `npm install -g @anthropic-ai/claude-code`（[官方文档](https://docs.anthropic.com/en/docs/claude-code)）
+   - **Gemini CLI** — `npm install -g @google/gemini-cli`（[官方文档](https://github.com/google-gemini/gemini-cli)）
+3. 在 Obsidian 中打开库文件夹，并在同一目录下运行你的 AI 助手
+4. **推荐**：安装 [Terminal 插件](https://github.com/polyipseity/obsidian-terminal)，可直接在 Obsidian 中运行 Claude Code
 
 ### 你的第一天
 

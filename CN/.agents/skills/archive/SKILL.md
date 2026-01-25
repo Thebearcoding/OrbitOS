@@ -84,7 +84,7 @@ Present completion summary in Chinese:
 - quick-capture.md → 归档/收件箱/2026/01/
 
 **库状态:**
-- 活跃项目: [N]
+- 正在进行项目: [N]
 - 收件箱条目: [N]
 - 已归档项目 (总计): [N]
 - 已归档收件箱 (总计): [N]

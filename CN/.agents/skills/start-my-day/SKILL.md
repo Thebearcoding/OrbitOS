@@ -56,7 +56,7 @@ Use the AskUserQuestion tool to gather:
    - If not: create from template `99_系统/模板/Daily_Note.md`
 
 2. **Populate the daily note:**
-   - **优先事项**: Carryover incomplete tasks from yesterday, then user's focus, then project next actions
+   - **待办事项**: Carryover incomplete tasks from yesterday, then user's focus, then project next actions
    - **日志**: Leave empty for user
    - **备注**: Add recommendations (time-sensitive items, stale projects, inbox count)
    - **相关项目**: List active projects with current status
@@ -84,12 +84,12 @@ Output a concise summary in Chinese:
 
 **今日笔记:** [[YYYY-MM-DD]]
 
-**优先事项:**
-- [ ] 优先事项1
-- [ ] 优先事项2
-- [ ] 优先事项3
+**待办事项:**
+- [ ] 待办事项1
+- [ ] 待办事项2
+- [ ] 待办事项3
 
-**活跃项目 ([N]):**
+**正在进行项目 ([N]):**
 - [[Project1]] - 状态
 - [[Project2]] - 状态
 

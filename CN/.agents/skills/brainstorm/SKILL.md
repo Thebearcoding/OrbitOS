@@ -97,7 +97,7 @@ After synthesis, offer the user three options in Chinese:
 ```markdown
 ## 下一步想做什么?
 
-1. **创建项目** - 将此想法转化为有结构和里程碑的活跃项目
+1. **创建项目** - 将此想法转化为有结构和里程碑的正在进行项目
    - 我将使用 `/kickoff` 流程在 `20_项目/` 创建项目笔记
 
 2. **整理知识** - 将概念和学习内容整理到知识库
@@ -214,7 +214,7 @@ First, what's driving this interest? Are you solving a specific problem with how
 [Provides synthesis summary in Chinese]
 
 "下一步想做什么?
-1. 创建项目 - 将此想法转化为有结构和里程碑的活跃项目...
+1. 创建项目 - 将此想法转化为有结构和里程碑的正在进行项目...
 2. 整理知识 - 将概念和学习内容整理到知识库...
 3. 继续探索 - 继续头脑风暴...
 
